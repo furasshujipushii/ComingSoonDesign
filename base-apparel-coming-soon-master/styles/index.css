@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.card-container {
+  background-image: -webkit-gradient(linear, bot, from(white), to(#fff5f5));
+  background-image: linear-gradient(to bot, white, #fff5f5);
+  margin: 120px auto;
+  height: 70%;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card-container .left {
+  background: rgba(247, 222, 222, 0.432);
+  -webkit-box-flex: 6;
+      -ms-flex: 6;
+          flex: 6;
+  padding: 40px 120px;
+  position: relative;
+}
+
+.card-container .left h1 {
+  letter-spacing: 15px;
+  width: 70%;
+  margin-top: 50px;
+  font-size: 3em;
+  text-transform: uppercase;
+}
+
+.card-container .left h1 span {
+  color: #ce9797;
+  font-weight: 300;
+}
+
+.card-container .left p {
+  margin-top: 20px;
+  color: #ce9797;
+  font-weight: 300;
+  width: 80%;
+}
+
+.card-container .left .btn {
+  position: absolute;
+  right: 43%;
+  top: 75%;
+  text-align: center;
+  height: 40px;
+  width: 60px;
+  background-image: -webkit-gradient(linear, right top, left top, from(#ee8c8c), to(#f8bfbf));
+  background-image: linear-gradient(to left, #ee8c8c, #f8bfbf);
+  border-radius: 20px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.card-container .left .btn:hover {
+  opacity: 0.3;
+}
+
+.card-container .left .btn #arrow {
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+}
+
+.card-container .left #error {
+  position: absolute;
+  left: 43%;
+  -webkit-transform: translateY(133%);
+          transform: translateY(133%);
+  visibility: hidden;
+}
+
+.card-container .left #err-msg {
+  position: absolute;
+  bottom: 13%;
+  left: 20%;
+  font-size: 0.8em;
+  color: red;
+  visibility: hidden;
+}
+
+.card-container .left #success-msg {
+  position: absolute;
+  bottom: 13%;
+  left: 20%;
+  font-size: 0.8em;
+  color: #c55396;
+  visibility: hidden;
+}
+
+.card-container .left input {
+  margin-top: 25px;
+  padding: 10px 45px;
+  border: 1px solid #ce9797;
+  background: none;
+  border-radius: 19px;
+  color: #ce9797;
+}
+
+.card-container .right {
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+  background: url("../images/hero-desktop.jpg") center/cover;
+}
+/*# sourceMappingURL=index.css.map */
